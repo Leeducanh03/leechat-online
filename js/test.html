@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/webapp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+.chat-container{
+    height: 100vh;
+}
+.chat-container .header{
+    background-color: rgb(250, 111, 83);
+    text-align: center;
+    height: 64px;
+    line-height: 64px;
+    color: #fff;
+}
+.conversation-detail .title{
+    height: 64px;
+    text-align: center;
+    line-height: 64px;
+    border-bottom: 1px solid black;
+    
+}
+.main{
+    height: calc(100vh - 64px);
+    
+}
+.main .conversation-detail{ 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+    /* justify-content: space-between; */
+}
+.conversation-detail .list-chat{
+    flex-grow: 1;
+}
+.conversation-detail .list-chat .me .content{
+    display: flex;
+    background-color: rgb(209, 199, 199);
+    justify-content: flex-end;
+    max-width: 40%;
+    margin-left: auto;
+}
+.conversation-detail .list-chat .content2{
+    display: flex;
+    background-color: rgb(209, 199, 199);
+    justify-content: flex-end;
+    max-width: 40%;
+    margin-left: auto;
+}
+.conversation-detail .list-chat .me{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;  
+}
+.content{
+    margin-bottom: 10px;
+}
+.conversation-detail .list-chat .owner .content{
+    display: flex;
+    margin-right: auto;
+    max-width: 40%;
+    background-color: rgb(209, 199, 199);
+}
+.title{
+    background-color: #fff;
+}
+.input-chat input{
+    width: 100%;
+    height: 44px;
+    position: relative;
+    margin-bottom: 10px;
+    outline: none;
+    border-radius: 20px;
+    background-color: rgb(251, 227, 231);
+}
+.send{
+    position: absolute;
+    right: 20px;
+    bottom: 19px;
+    font-size: x-large;
+    border: none;
+    color: black;
+}
+.list-chat{
+    overflow: auto;
+}
+.message-me{
+    border-radius: 1px solid black;
+}
+</style>
+</head>
+<body>
+    <div class="chat-container">  
+        <div class="header">
+                Hello Ra!
+        </div>
+        <div class="main">
+            <div class="conversation-detail">
+                <div class="title">
+                    First Conversation
+                </div>
+                <div class="list-chat">
+                  
+                    <div class="message me">
+                        <div class="content">
+                            Hello
+                        </div>
+                        <div class="content">
+                            Hello
+                        </div>
+                        <div class="content">
+                            Hello
+                        </div>
+                    </div>
+                    <div class="message owner"> Bot@123
+                        <div class="content">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus impedit, dolores quasi praesentium accusantium obcaecati tempore. Aspernatur unde nesciunt quis error sit earum dolore provident temporibus, laudantium, veritatis, nisi sed!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam fugiat expedita quae officiis, quas repellendus possimus cumque maxime ex consectetur inventore dolor, praesentium, aliquam iure numquam vitae eaque cum? Porro.
+                            Excepturi, aperiam. Quos perspiciatis reiciendis soluta tempora fugit sit vel, alias consectetur! Reprehenderit rem tenetur vero. Nam at voluptatibus quia quasi, veritatis corrupti, labore maxime fuga aspernatur, nemo illo aum illo velit maxime quas minus ducimus aperiam rem veritatis quidem molestias quaerat explicabo, magni eius omnis doloremque quae quia. Quae, cum!
+                        </div>
+                        <div class="content2">
+                            Hello
+                        </div>
+                        <div class="content2">
+                            Hello
+                        </div>
+                    </div>
+                </div>
+                <form>
+                    <div class="input-chat">
+                        <input placeholder="Message chat!">
+                    </div>
+                    <button class="send" type="button" id= "sendData"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>         
+        </div>
+    </div>    
+</body>
+</html>
